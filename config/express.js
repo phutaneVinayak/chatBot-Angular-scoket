@@ -1,4 +1,4 @@
-//var config = require('./config'),
+//var config = require('../../config'),
 var http = require('http'),
     socketio = require('socket.io'),
     express = require('express'),
@@ -40,6 +40,8 @@ module.exports = function(db) {
     db: db.connection.db
   });
 
+  console.log("mongoStore :: in express.js", mongoStore)
+
 
   app.set('views', './app/views');
   app.set('view engine', 'ejs');
@@ -48,9 +50,9 @@ module.exports = function(db) {
   app.use(passport.initialize());
   app.use(passport.session());
 
-  require('../app/routes/index.server.routes.js')(app);
-  require('../app/routes/users.server.routes.js')(app);
-  require('../app/routes/articles.server.routes.js')(app);
+  //require('../app/routes/index.server.routes.js')(app);
+ // require('../app/routes/users.server.routes.js')(app);
+ // require('../app/routes/articles.server.routes.js')(app);
   require('./socketio')(server, io, mongoStore)
   app.use(express.static('./public'));
 

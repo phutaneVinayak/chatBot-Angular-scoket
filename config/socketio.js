@@ -1,5 +1,5 @@
-var config = require('./config'),
-  cookieParser = require('cookie-parser'),
+ //config = require('./config'),
+var cookieParser = require('cookie-parser'),
   passport = require('passport');
 
 module.exports = function(server, io, mongoStore) {
