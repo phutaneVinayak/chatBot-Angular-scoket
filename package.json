@@ -1,0 +1,38 @@
+{
+  "name": "chatbotas",
+  "version": "0.0.9",
+  "description": "chatbot with angular js and scoket.io and other dependancy ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phutaneVinayak/chatBot-Angular-scoket.git"
+  },
+  "author": "vinayak vishwanath phutane",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phutaneVinayak/chatBot-Angular-scoket/issues"
+  },
+  "homepage": "https://github.com/phutaneVinayak/chatBot-Angular-scoket#readme",
+  "dependencies": {
+    "express": "~4.8.0",
+    "morgan": "~1.3.0",
+    "compression": "~1.0.11",
+    "body-parser": "~1.8.0",
+    "method-override": "~2.2.0",
+    "express-session": "~1.7.6",
+    "ejs": "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "mongoose": "~3.8.15",
+    "passport": "~0.2.1",
+    "passport-local": "~1.0.0",
+    "passport-facebook": "~1.0.3",
+    "passport-twitter": "~1.0.2",
+    "passport-google-oauth": "~0.1.5",
+    "socket.io": "~1.1.0",
+    "connect-mongo": "~0.4.1",
+    "cookie-parser": "~1.3.3"
+  }
+}
